@@ -1,0 +1,23 @@
+# Ignorar todo por defecto
+*
+# Permitir solo lo que se publica
+!.gitignore
+!README.md
+!Desarrollo_Actividad_1_Alejandro_De_Mendoza_Final.pdf
+
+# Documentación explícita de lo que NUNCA debe subirse (editable, solo local)
+*.docx
+*.doc
+*.dotx
+*.odt
+*.pptx
+*.xlsx
+~$*
+.~lock.*
+*_BACKUP*
+# Carpeta local de la actividad (enunciado, anexos, temas, figuras y scripts)
+actividad/
+Actividad*/
+Temas*/
+fig/
+figuras/
