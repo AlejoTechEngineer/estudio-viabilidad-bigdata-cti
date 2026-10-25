@@ -1,8 +1,8 @@
 <div align="center">
 
-# 🚛 Estudio de Viabilidad – Sistema de Big Data en CTI
+# 🚛 CTI – Estudio de Viabilidad de un Sistema de Big Data
 
-### *Estudio cualitativo de viabilidad (EVS): análisis de impacto, evaluación de alternativas y una propuesta ejecutable por fases*
+### *Estudio cualitativo (EVS), análisis de impacto, matriz ponderada de alternativas y una propuesta ejecutable por fases con puertas de decisión*
 
 **Asignatura: Servicios de Tecnología de la Información · UNIR · Actividad No. 1**
 
@@ -11,9 +11,10 @@
 [![Actividad](https://img.shields.io/badge/Actividad-No.%201%20%C2%B7%20Estudio%20de%20viabilidad-E36209.svg)]()
 [![Enfoque](https://img.shields.io/badge/Enfoque-Cualitativo%20%C2%B7%20sin%20cifras%20econ%C3%B3micas-150458.svg)]()
 [![Documento](https://img.shields.io/badge/Documento-15%20p%C3%A1ginas%20%C2%B7%2014%20tablas%20%C2%B7%204%20figuras-2496ED.svg)]()
-[![Recomendación](https://img.shields.io/badge/Recomendaci%C3%B3n-A3%20%C2%B7%20Big%20Data%20por%20fases-success.svg)]()
+[![Recomendación](https://img.shields.io/badge/Recomendaci%C3%B3n-A3%20%C2%B7%20Big%20Data%20por%20fases-3776AB.svg)]()
+[![Status](https://img.shields.io/badge/Status-Completo-success.svg)]()
 
-**[Contexto](#-contexto-y-alcance) • [Contenido](#-contenido-del-repositorio) • [Metodología](#-metodología) • [Arquitectura](#️-arquitectura-de-referencia) • [Hoja de ruta](#️-hoja-de-ruta-y-puertas-de-decisión) • [Lectura](#-lectura-del-documento) • [Autor](#-autor)**
+**[Contexto](#-contexto-y-alcance) • [Contenido](#-contenido-del-repositorio) • [Marcos](#-marcos-y-herramientas-utilizados) • [Arquitectura](#️-arquitectura-de-referencia) • [Lectura](#-lectura-del-documento) • [Validación](#-cómo-se-respaldan-las-valoraciones) • [Autor](#-autor)**
 
 <img src="https://img.shields.io/badge/Marco-M%C3%A9trica%20v3%20%C2%B7%20EVS-5FA04E?style=flat-square" alt="Métrica v3"/>
 <img src="https://img.shields.io/badge/Gobierno-ISO%2FIEC%2038500%20%C2%B7%20Val%20IT-4479A1?style=flat-square" alt="Gobierno de TI"/>
@@ -29,15 +30,17 @@
 
 - [🎯 Contexto y Alcance](#-contexto-y-alcance)
 - [📁 Contenido del Repositorio](#-contenido-del-repositorio)
-- [🧭 Metodología](#-metodología)
-- [⚖️ Alternativas Evaluadas](#️-alternativas-evaluadas)
+- [🧰 Marcos y Herramientas Utilizados](#-marcos-y-herramientas-utilizados)
 - [🏗️ Arquitectura de Referencia](#️-arquitectura-de-referencia)
-- [🎯 Casos de Uso Priorizados](#-casos-de-uso-priorizados)
-- [🗺️ Hoja de Ruta y Puertas de Decisión](#️-hoja-de-ruta-y-puertas-de-decisión)
-- [⚠️ Riesgos Principales](#️-riesgos-principales)
+- [🗃️ Situación Actual de CTI](#️-situación-actual-de-cti)
+- [🔁 Flujo de una Decisión](#-flujo-de-una-decisión)
+- [⚖️ Alternativas y Recomendación](#️-alternativas-y-recomendación)
 - [🧩 Del Enunciado al Documento](#-del-enunciado-al-documento)
 - [📖 Lectura del Documento](#-lectura-del-documento)
-- [📚 Marcos y Normas de Referencia](#-marcos-y-normas-de-referencia)
+- [🗂️ Tablas y Figuras del Documento](#️-tablas-y-figuras-del-documento)
+- [🧪 Cómo se Respaldan las Valoraciones](#-cómo-se-respaldan-las-valoraciones)
+- [✅ Buenas Prácticas Aplicadas](#-buenas-prácticas-aplicadas)
+- [🔐 Alcance y Limitaciones](#-alcance-y-limitaciones)
 - [📝 Nota](#-nota)
 - [👤 Autor](#-autor)
 
@@ -45,22 +48,21 @@
 
 ## 🎯 Contexto y Alcance
 
-Este repositorio contiene el documento de la **Actividad No. 1: Realización de un estudio de viabilidad** de la asignatura **Servicios de Tecnología de la Información** (UNIR), aplicado al caso de la **Compañía de Transporte Internacional, S.L. (CTI)**.
+Este repositorio contiene el documento de la **Actividad No. 1: Realización de un estudio de viabilidad** de la asignatura **Servicios de Tecnología de la Información** (UNIR), aplicado al caso de la **Compañía de Transporte Internacional, S.L. (CTI)**. El estudio responde a una pregunta del Director General: **¿conviene implantar un sistema de Big Data?**
 
-CTI opera con **1.200 camiones, 350 autobuses y 2.800 empleados** (2.200 conductores) en tres regiones, con cinco sistemas que no se comunican entre sí (ADMIN, FLETES, VIAJES, PLANIFICADOR y MANTEN). Sus clientes exigen entregas **just-in-time** que hoy no puede atender, y la utilización de la flota es baja. El estudio responde a una pregunta del Director General: **¿conviene implantar un sistema de Big Data?**
+CTI opera con **1.200 camiones, 350 autobuses y 2.800 empleados** (2.200 conductores) en tres regiones, con **cinco sistemas que no se comunican entre sí**. Sus clientes exigen entregas **just-in-time** que hoy no puede atender, y la utilización de la flota es baja. El documento sigue el **Estudio de Viabilidad del Sistema (EVS)** de Métrica v3 y valora las alternativas con **Val IT** e **ISO/IEC 38500**.
 
-> **Enfoque:** estudio **cualitativo**, sin evaluación económica, caso de negocio ni indicadores, tal como pide el enunciado.
-> **Ámbito:** procesos de negocio, personas y tecnología, con la región de Utrecht como zona de piloto.
-> **Resultado:** acometer el proyecto **por fases y con condiciones** (alternativa **A3**), empezando por una Fase 0 de fundamentos.
+> **Documento:** estudio de viabilidad cualitativo, sin evaluación económica, caso de negocio ni indicadores.
+> **Enfoque:** análisis de impacto, evaluación cualitativa, matriz ponderada y privacidad por diseño.
+> **Alcance:** 4 alternativas → 1 recomendación (A3) → 4 fases con 4 puertas de decisión → piloto en Utrecht.
 
 ### 🌟 ¿Qué aporta este estudio?
 
-- 📊 **Análisis de impacto** del proyecto en procesos de negocio, personas y tecnología, con las acciones para mitigarlo (Tabla 1).
+- 📊 **Análisis de impacto** en procesos de negocio, personas y tecnología, con las acciones para mitigarlo (Tabla 1).
 - ⚖️ **Evaluación cualitativa** de beneficios frente a factores en contra y una recomendación final razonada (Tabla 2).
-- 🔀 **Cuatro alternativas** comparadas con criterios de Val IT y una **matriz ponderada** de siete criterios, de no actuar a un Big Data integral.
-- 📏 **Datos objetivos del caso** que respaldan cada valoración y verificación de las **tres condiciones de inversión**.
+- 📏 **Datos objetivos del caso** que respaldan cada juicio y verificación de las **tres condiciones de inversión** (Tablas 5 y 6).
+- 🔀 **Matriz ponderada** de siete criterios para comparar las cuatro alternativas de forma explícita y reproducible (Tabla 8).
 - 🏗️ **Arquitectura de referencia por capas** que respeta los sistemas actuales en lugar de sustituirlos.
-- 🔐 **Privacidad por diseño**: tratamiento por categoría de dato, base jurídica RGPD y evaluación de impacto (EIPD).
 - 🗺️ **Hoja de ruta con puertas de decisión** y un análisis de sensibilidad que indica cuándo cambiaría la recomendación.
 
 ---
@@ -70,62 +72,47 @@ CTI opera con **1.200 camiones, 350 autobuses y 2.800 empleados** (2.200 conduct
 <table align="center">
   <tr><th>Elemento</th><th>Descripción</th></tr>
   <tr><td colspan="2"><b>📂 raíz</b></td></tr>
-  <tr><td><code>Desarrollo_Actividad_1_Alejandro_De_Mendoza_Final.pdf</code></td><td>📄 <b>Documento final</b> del estudio de viabilidad: 15 páginas, 9 secciones, 14 tablas y 4 figuras</td></tr>
+  <tr><td><code>Desarrollo_Actividad_1_Alejandro_De_Mendoza_Final.pdf</code></td><td>📄 <b>Documento final</b> del estudio de viabilidad: <b>15 páginas</b>, 9 secciones, 14 tablas y 4 figuras</td></tr>
   <tr><td><code>README.md</code></td><td>📘 Este documento</td></tr>
   <tr><td><code>.gitignore</code></td><td>🚫 Lista blanca: solo se publican el PDF, el README y el propio <code>.gitignore</code>. Los archivos editables (Word) y el material de la actividad se conservan en local</td></tr>
+  <tr><td colspan="2"><b>📑 Secciones del PDF</b></td></tr>
+  <tr><td><b>1</b> Introducción</td><td>🧭 Propósito con <b>resumen ejecutivo</b>, alcance, definiciones, referencias y visión general</td></tr>
+  <tr><td><b>2</b> Memoria explicativa</td><td>🧠 Enfoque metodológico (Tabla 3), alternativas (Tabla 4), criterios, supuestos y límites</td></tr>
+  <tr><td><b>3</b> Situación actual</td><td>🔎 Diagnóstico de CTI (EVS 2) y requisitos de alto nivel R1–R6 (EVS 3)</td></tr>
+  <tr><td><b>4</b> Análisis de impacto</td><td>📊 <b>Tabla 1</b>: procesos de negocio, personas y tecnología</td></tr>
+  <tr><td><b>5</b> Evaluación cualitativa</td><td>⚖️ <b>Tabla 2</b> y recomendación final; <b>5.1</b> datos objetivos y <b>5.2</b> tres condiciones de inversión</td></tr>
+  <tr><td><b>6</b> Desarrollo adicional</td><td>🏗️ Arquitectura, casos de uso, matriz ponderada, riesgos, RGPD, gobierno, RACI, hoja de ruta y sensibilidad</td></tr>
+  <tr><td><b>7–9</b></td><td>📝 Conclusiones, bibliografía y agradecimiento</td></tr>
 </table>
 
-### 📑 Estructura del documento
-
-| Sección | Contenido |
-|:---:|:---|
-| **1** | Introducción: propósito con **resumen ejecutivo**, alcance, definiciones, referencias y visión general |
-| **2** | Memoria explicativa: enfoque metodológico (Tabla 3), alternativas (Tabla 4), criterios, supuestos y límites |
-| **3** | Situación actual de CTI (EVS 2) y requisitos de alto nivel R1–R6 (EVS 3) |
-| **4** | **Análisis de impacto** en procesos de negocio, personas y tecnología (Tabla 1) |
-| **5** | **Evaluación cualitativa y recomendación final** (Tabla 2); datos objetivos del caso (5.1, Tabla 5) y tres condiciones de inversión (5.2, Tabla 6) |
-| **6** | Desarrollo adicional: arquitectura, casos de uso, matriz ponderada, riesgos, RGPD, gobierno, RACI, hoja de ruta y sensibilidad (Tablas 7–14, Figuras 1–4) |
-| **7–9** | Conclusiones, bibliografía y agradecimiento |
-
 ---
 
-## 🧭 Metodología
+## 🧰 Marcos y Herramientas Utilizados
 
-El estudio sigue las actividades del **Estudio de Viabilidad del Sistema (EVS)** de Métrica v3, ajustadas al alcance cualitativo del encargo:
+<div align="center">
 
-```mermaid
-flowchart LR
-    A["EVS 1<br/>Alcance"] --> B["EVS 2<br/>Situación actual"]
-    B --> C["EVS 3<br/>Requisitos"]
-    C --> D["EVS 4<br/>Alternativas"]
-    D --> E["EVS 5<br/>Valoración"]
-    E --> F["EVS 6<br/>Selección"]
-    F --> G["Recomendación<br/>A3 por fases"]
-```
+![Métrica v3](https://img.shields.io/badge/M%C3%A9trica%20v3-EVS-5FA04E?style=for-the-badge)
+![Val IT](https://img.shields.io/badge/Val%20IT-valoraci%C3%B3n-0052CC?style=for-the-badge)
+![ISO/IEC 38500](https://img.shields.io/badge/ISO%2FIEC%2038500-gobierno%20de%20TI-4479A1?style=for-the-badge)
+![ITIL](https://img.shields.io/badge/ITIL%20%C2%B7%20ISO%2FIEC%2020000-servicio-6E4C9E?style=for-the-badge)
+![ISO/IEC 27001](https://img.shields.io/badge/ISO%2FIEC%2027001-seguridad-B22222?style=for-the-badge)
+![RGPD](https://img.shields.io/badge/RGPD-EIPD-B4CA65?style=for-the-badge)
+![Word](https://img.shields.io/badge/Microsoft%20Word-documento-2B579A?style=for-the-badge&logo=microsoftword&logoColor=white)
+![Mermaid](https://img.shields.io/badge/Mermaid-diagramas-FF3670?style=for-the-badge&logo=mermaid&logoColor=white)
 
-| Actividad del EVS | Dónde se recoge |
-|:---|:---:|
-| EVS 1. Establecimiento del alcance | Secciones 1 y 2.3 |
-| EVS 2. Estudio de la situación actual | Sección 3.1 |
-| EVS 3. Definición de requisitos | Sección 3.2 |
-| EVS 4. Alternativas de solución | Sección 2.2 |
-| EVS 5. Valoración de alternativas | Secciones 4, 5 y 6 |
-| EVS 6. Selección de la solución | Secciones 5 y 6.7 |
+</div>
 
-Las alternativas se valoran con los cuatro ejes de **Val IT** (estrategia, arquitectura, valor y entrega) y se contrastan con los principios de gobierno de **ISO/IEC 38500**.
-
----
-
-## ⚖️ Alternativas Evaluadas
-
-| Alternativa | Valoración cualitativa | Total ponderado | Resultado |
-|:---|:---|:---:|:---:|
-| **A0.** No actuar | Riesgo bajo, pero no resuelve la falta de puntualidad just-in-time ni la baja utilización de la flota | 3,20 | ❌ Descartada |
-| **A1.** BI incremental sobre los sistemas actuales | Fácil de ejecutar, pero mantiene los datos en silos y no gestiona volumen, velocidad ni variedad | 3,75 | 🟡 Insuficiente como solución final |
-| **A2.** Big Data integral en un solo despliegue | Máximo potencial teórico, pero la infraestructura no lo soporta y el riesgo organizativo y legal es muy alto | 2,60 | ❌ Descartada |
-| **A3.** Big Data por fases | Equilibra beneficio y riesgo, aprende con un piloto y encaja con la estrategia y el gobierno de TI | **4,00** | ✅ **Seleccionada** |
-
-El total ponderado sale de la matriz de la sección 6.3 (Tabla 8): siete criterios puntuados de 1 a 5 por juicio experto, con más peso en la puntualidad just-in-time y la utilización de la flota. A1 queda cerca de A3, lo que es coherente con la recomendación: la Fase 0 coincide en parte con A1 y A3 solo se activa al superar la puerta G0.
+| Marco o norma | Uso en el estudio |
+|:---|:---|
+| **Métrica v3 (EVS)** | Estructura del estudio: alcance, situación actual, requisitos, alternativas, valoración y selección |
+| **Val IT** | Criterios de valoración de las alternativas: estrategia, arquitectura, valor y entrega |
+| **ISO/IEC 38500** | Principios de gobierno de TI y sus funciones: evaluar, dirigir y monitorizar |
+| **ITIL / ISO/IEC 20000** | Operación del sistema como servicio |
+| **ISO/IEC 27001** | Seguridad de la información |
+| **ISO 22301** | Plan de continuidad del negocio de la plataforma |
+| **ISO/IEC 19770** | Inventario de licencias y activos de software |
+| **RGPD (Reglamento UE 2016/679)** | Base jurídica, minimización y evaluación de impacto (EIPD) previa |
+| **Matriz RACI** | Asignación de responsabilidades del proyecto |
 
 ---
 
@@ -140,7 +127,7 @@ flowchart LR
         S4[PLANIFICADOR]
         S5[MANTEN]
     end
-    subgraph P["Plataforma de datos"]
+    subgraph P["Plataforma de datos en la UE"]
         I["2. Ingesta<br/>captura de cambios"]
         A["3. Almacenamiento<br/>zona cruda y depurada"]
         N["4. Proceso y analítica"]
@@ -155,36 +142,62 @@ flowchart LR
     T -.- P
 ```
 
-La plataforma **no modifica los sistemas actuales**: captura sus cambios, trabaja con datos mínimos y pseudonimizados desde la zona depurada, mantiene los datos en la UE con formatos abiertos y **cierra el ciclo** devolviendo recomendaciones a PLANIFICADOR y MANTEN.
+La plataforma **no modifica los sistemas actuales**: captura sus cambios, trabaja con datos mínimos y pseudonimizados desde la zona depurada, mantiene los datos en la UE con formatos abiertos y **cierra el ciclo** devolviendo recomendaciones a PLANIFICADOR y MANTEN. Una plataforma en la nube de la UE es un **gasto operativo (OPEX)** más flexible que renovar el hardware obsoleto de Orange, que sería **gasto de capital (CAPEX)**.
 
 ---
 
-## 🎯 Casos de Uso Priorizados
-
-| Caso | Caso de uso | Decisión |
-|:---:|:---|:---:|
-| UC1 | Seguimiento de envíos casi en tiempo real | 🚀 Piloto |
-| UC2 | Optimización de capacidad y retornos | 🚀 Piloto |
-| UC4 | Previsión del 20 % de trabajo urgente o puntual | 🚀 Piloto |
-| UC8 | Calidad y conciliación del dato FLETES-ADMIN | 🧱 Habilitador (Fases 0 y 1) |
-| UC3 | Mantenimiento predictivo | Fase 2, tras consulta laboral y EIPD |
-| UC5 | Analítica y segmentación de clientes | Fase 2 |
-| UC6 | Análisis de reservas de pasajeros | Fase 2 |
-| UC7 | Consumo de combustible y emisiones | Fase 3 |
-
----
-
-## 🗺️ Hoja de Ruta y Puertas de Decisión
+## 🗃️ Situación Actual de CTI
 
 ```mermaid
-flowchart LR
-    F0["Fase 0<br/>Fundamentos"] -->|G0| F1["Fase 1<br/>Piloto Utrecht"]
-    F1 -->|G1| F2["Fase 2<br/>Extensión"]
-    F2 -->|G2| F3["Fase 3<br/>Explotación avanzada"]
-    F3 -->|G3| O["Operación<br/>ordinaria"]
+flowchart TB
+    subgraph CTI["CTI hoy: cinco sistemas aislados"]
+        FL["FLETES<br/>pedidos de mercancías"]
+        VI["VIAJES<br/>reservas y billetes"]
+        AD["ADMIN<br/>administración"]
+        PL["PLANIFICADOR<br/>planificación automática"]
+        MA["MANTEN<br/>mantenimiento de la flota"]
+    end
+    FL -. "datos que no concilian" .- AD
+    VI -. "sin interfaz" .- AD
+    X["Sin repositorio común de datos"] -.- CTI
 ```
 
-Cada fase avanza en cuatro frentes (gobierno y cumplimiento, personas y cambio, tecnología y casos de uso) y termina con una **decisión del Director General** basada en condiciones verificables, sin fechas ni cifras porque dependen del caso de negocio posterior.
+| Dato del caso | Valor |
+|:---|:---|
+| 🚚 Flota | 1.550 vehículos (1.200 camiones y 350 autobuses) |
+| 👷 Conductores | 2.200 de 2.800 empleados |
+| 💽 Almacenamiento total | unos 1,5 TB (800 + 400 + 300 GB) |
+| 📞 Oficinas locales con módem | 8 de 20 |
+| 🧑‍💻 Gerentes de sistemas | 13 (5 en Utrecht y 4 en cada una de las otras dos regiones) |
+| 🗓️ Trabajo conocido con dos meses de antelación | 80 %; el 20 % restante es urgente o puntual |
+| ⚙️ Planificación automática | 95 % con PLANIFICADOR |
+
+No existe un departamento central de Informática: los jefes de Administración dedican la mitad de su tiempo a TI. El estudio aplica el principio de **dato único**: cada dato se registra una sola vez en un repositorio común con acceso por perfiles.
+
+---
+
+## 🔁 Flujo de una Decisión
+
+```mermaid
+sequenceDiagram
+    participant DG as Director General
+    participant E as Estudio de viabilidad
+    participant P as Equipo del proyecto
+    participant DPO as DPO y representantes
+    E->>DG: Recomienda A3: Big Data por fases (evaluar)
+    DG->>P: Aprueba la Fase 0 y encarga el caso de negocio
+    P->>DPO: EIPD previa y consulta a los representantes de los trabajadores
+    DPO-->>P: Sin riesgo residual alto y consulta cerrada
+    P->>DG: Puerta G0
+    DG->>P: Continuar, ajustar o detener (dirigir)
+    P->>P: Fase 1: piloto en Utrecht (UC1, UC2 y UC4)
+    P->>DG: Puerta G1: datos fiables e integrados con PLANIFICADOR
+    DG->>P: Extender a Düsseldorf, Orange y Pasajeros (monitorizar)
+    P->>DG: Puertas G2 y G3
+    DG-->>P: Explotación avanzada y paso a operación ordinaria
+```
+
+Cada fase termina con una **decisión del Director General** basada en condiciones verificables. En cada puerta puede **continuar, ajustar o detener** el proyecto, con un horizonte de evaluación de tres años.
 
 | Puerta | Decide | Condición principal para avanzar |
 |:---:|:---|:---|
@@ -192,6 +205,94 @@ Cada fase avanza en cuatro frentes (gobierno y cumplimiento, personas y cambio, 
 | **G1** | Extender a Düsseldorf, Orange y Pasajeros | Piloto con datos fiables, integrado con PLANIFICADOR y usado para decidir |
 | **G2** | Pasar a explotación avanzada | Las tres regiones conectadas con datos consistentes y VIAJES integrado respetando el RGPD |
 | **G3** | Cerrar el programa | Valor demostrado y sostenible, con responsables permanentes del dato |
+
+---
+
+## ⚖️ Alternativas y Recomendación
+
+| Alternativa | Valoración cualitativa | Total ponderado | Resultado |
+|:---|:---|:---:|:---:|
+| **A0.** No actuar | Riesgo bajo, pero no resuelve la falta de puntualidad just-in-time ni la baja utilización de la flota | 3,20 | ❌ Descartada |
+| **A1.** BI incremental sobre los sistemas actuales | Fácil de ejecutar, pero mantiene los datos en silos y no gestiona volumen, velocidad ni variedad | 3,75 | 🟡 Insuficiente como solución final |
+| **A2.** Big Data integral en un solo despliegue | Máximo potencial teórico, pero la infraestructura no lo soporta y el riesgo organizativo y legal es muy alto | 2,60 | ❌ Descartada |
+| **A3.** Big Data por fases | Equilibra beneficio y riesgo, aprende con un piloto y encaja con la estrategia y el gobierno de TI | **4,00** | ✅ **Seleccionada** |
+
+El total ponderado sale de la matriz de la sección 6.3 (Tabla 8): siete criterios puntuados de 1 a 5, con más peso en la puntualidad just-in-time y la utilización de la flota. A1 queda cerca de A3, lo que es coherente con la recomendación: la Fase 0 coincide en parte con A1 y A3 solo se activa al superar la puerta G0.
+
+---
+
+## 🧩 Del Enunciado al Documento
+
+| Requisito de la actividad | Cómo lo resuelve el documento |
+|:---|:---|
+| **Estudio de viabilidad cualitativo** | Sin cifras económicas, caso de negocio ni indicadores (sección 2.3) |
+| **Análisis de impacto** en procesos de negocio, personas y tecnología | **Tabla 1**, con el impacto y las acciones para mitigarlo (sección 4) |
+| **Evaluación cualitativa** con beneficios, factores en contra y recomendación | **Tabla 2**, con la recomendación final (sección 5) |
+| **Explicación de cómo se aborda** el problema | Memoria explicativa: metodología EVS, alternativas, criterios y supuestos (sección 2) |
+| **Capacidad de análisis** | Datos objetivos, tres condiciones de inversión y desarrollo adicional (secciones 5.1, 5.2 y 6) |
+
+---
+
+## 📖 Lectura del Documento
+
+1. Abrir el archivo `Desarrollo_Actividad_1_Alejandro_De_Mendoza_Final.pdf`.
+2. Consultar el **Resumen ejecutivo** en la sección 1.1.
+3. Revisar la **Tabla 1** (sección 4) y la **Tabla 2** (sección 5).
+4. Comprobar el respaldo de las valoraciones en las secciones **5.1** y **5.2**.
+5. Profundizar en el **Desarrollo adicional** (sección 6).
+
+| Si busca… | Vaya a |
+|:---|:---|
+| ⏱️ La recomendación en dos minutos | Resumen ejecutivo (sección 1.1) |
+| 📊 Las dos tablas que pide la actividad | Tablas 1 y 2 (secciones 4 y 5) |
+| 🔀 La comparación de alternativas | Tabla 4 (sección 2.2) y Tabla 8 (sección 6.3) |
+| 🗺️ Cómo se ejecutaría el proyecto | Hoja de ruta y puertas de decisión (sección 6.7) |
+
+---
+
+## 🗂️ Tablas y Figuras del Documento
+
+| Tabla | Contenido | Sección |
+|:---:|:---|:---:|
+| `1` | Análisis de impacto del proyecto en procesos de negocio, personas y tecnología | 4 |
+| `2` | Evaluación cualitativa y recomendación final | 5 |
+| `3` | Actividades del EVS y dónde se recogen en el documento | 2.1 |
+| `4` | Alternativas de solución y resultado de su valoración cualitativa | 2.2 |
+| `5` | Datos objetivos del caso y juicios que respaldan | 5.1 |
+| `6` | Verificación de las tres condiciones de inversión | 5.2 |
+| `7` | Casos de uso priorizados, datos necesarios y decisión de fase | 6.2 |
+| `8` | Matriz ponderada de las alternativas | 6.3 |
+| `9` | Registro de riesgos con respuesta y responsable | 6.4 |
+| `10` | Tratamiento previsto por categoría de dato (RGPD) | 6.5 |
+| `11` | Estado de gobierno del proyecto (ISO/IEC 38500 y Val IT) | 6.6 |
+| `12` | Matriz RACI del proyecto | 6.6 |
+| `13` | Puertas de decisión y condiciones de avance | 6.7 |
+| `14` | Escenarios que ajustarían la recomendación | 6.8 |
+
+| Figura | Contenido | Sección |
+|:---:|:---|:---:|
+| `1` | Arquitectura de referencia por capas | 6.1 |
+| `2` | Casos de uso según valor para el negocio y viabilidad actual | 6.2 |
+| `3` | Mapa de calor de riesgos (probabilidad por impacto) | 6.4 |
+| `4` | Hoja de ruta por frentes de trabajo y fases | 6.7 |
+
+---
+
+## 🧪 Cómo se Respaldan las Valoraciones
+
+```text
+Datos del caso (Tabla 5)  →  Juicios de las Tablas 1 y 2  →  Matriz ponderada (Tabla 8)  →  Condiciones de inversión (Tabla 6)
+```
+
+Cada juicio cualitativo se apoya en **datos verificables del enunciado del caso** (sección 5.1), y la matriz ponderada hace **explícito y reproducible** el criterio de comparación. La sección 5.2 comprueba las tres condiciones que justifican una inversión de TI:
+
+| Condición | Estado | Comentario |
+|:---|:---:|:---|
+| Rentabilidad económica aceptable | 🟡 No evaluada | Fuera del alcance cualitativo; se evalúa en el caso de negocio con horizonte de tres años |
+| Beneficios tangibles y bien definidos | 🟡 Parcial | Beneficios B1 a B8 definidos de forma cualitativa; falta cuantificarlos |
+| Riesgos asumibles | 🟢 Sí, con mitigación | Riesgos identificados y con respuesta (matriz de riesgos) |
+
+> **Conclusión:** la inversión solo se justifica hoy para la Fase 0. El resto queda condicionado a la puerta G0 y al caso de negocio económico.
 
 <details>
 <summary><b>🔄 Ver análisis de sensibilidad: qué cambiaría la recomendación</b></summary>
@@ -207,9 +308,8 @@ Cada fase avanza en cuatro frentes (gobierno y cumplimiento, personas y cambio, 
 
 </details>
 
----
-
-## ⚠️ Riesgos Principales
+<details>
+<summary><b>⚠️ Ver riesgos principales</b></summary>
 
 El documento registra **10 riesgos** valorados por probabilidad e impacto (Figura 3 y Tabla 9). Los de mayor exposición:
 
@@ -224,42 +324,38 @@ El documento registra **10 riesgos** valorados por probabilidad e impacto (Figur
 
 *P = probabilidad, I = impacto (B bajo, M medio, A alto).*
 
+</details>
+
 ---
 
-## 🧩 Del Enunciado al Documento
+## ✅ Buenas Prácticas Aplicadas
 
-| Requisito de la actividad | Cómo lo resuelve el documento |
+| Práctica | Dónde se aplica |
 |:---|:---|
-| **Estudio de viabilidad cualitativo** | Sin cifras económicas, caso de negocio ni indicadores (sección 2.3) |
-| **Análisis de impacto** en procesos de negocio, personas y tecnología | Tabla 1, con el impacto y las acciones para mitigarlo (sección 4) |
-| **Evaluación cualitativa** con beneficios, factores en contra y recomendación | Tabla 2, con la recomendación final (sección 5) |
-| **Explicación de cómo se aborda** el problema | Memoria explicativa: metodología EVS, alternativas, criterios y supuestos (sección 2) |
-| **Capacidad de análisis** | Desarrollo adicional: arquitectura, casos de uso, riesgos, RGPD, gobierno y hoja de ruta (sección 6) |
+| 🔐 **Privacidad por diseño**: datos mínimos, pseudonimización y EIPD previa | Sección 6.5, Tabla 10 |
+| 🪜 **Implantación por fases** con puertas de decisión verificables | Sección 6.7, Tabla 13 |
+| 🔌 **Desacoplar**: capturar cambios sin modificar los sistemas actuales | Sección 6.1 |
+| 🗄️ **Dato único** en un repositorio común con acceso por perfiles | Sección 6.1 |
+| 🇪🇺 **Datos en la UE** y formatos abiertos para evitar dependencia de un proveedor | Sección 6.1 |
+| 🏛️ **Gobierno frente a gestión** (ISO/IEC 38500): evaluar, dirigir y monitorizar | Sección 6.6, Tabla 11 |
+| 👥 **Responsabilidades explícitas** con una matriz RACI | Sección 6.6, Tabla 12 |
+| 📏 **Valoración reproducible** con una matriz ponderada | Sección 6.3, Tabla 8 |
+| 📌 **Juicios respaldados** con datos objetivos del caso | Sección 5.1, Tabla 5 |
+| 🔄 **Análisis de sensibilidad** de la recomendación | Sección 6.8, Tabla 14 |
+| 🧯 **Continuidad del negocio** (ISO 22301) e **inventario de activos** (ISO/IEC 19770) | Sección 6.1 |
+| 🤝 **Criterios para elegir proveedor**: referencias, niveles de servicio, datos en la UE y presupuesto por fases | Sección 6.1 |
+| 🧭 **Marcos adaptados al caso**: pocas buenas prácticas bien aplicadas | Sección 2.3 |
 
 ---
 
-## 📖 Lectura del Documento
+## 🔐 Alcance y Limitaciones
 
-1. Abrir el archivo `Desarrollo_Actividad_1_Alejandro_De_Mendoza_Final.pdf`.
-2. Consultar el **Resumen ejecutivo** en la sección 1.1.
-3. Revisar la **Tabla 1** (sección 4) y la **Tabla 2** (sección 5).
-4. Profundizar en el **Desarrollo adicional** (sección 6).
+Este es un estudio académico de viabilidad **cualitativo**. Por eso:
 
----
-
-## 📚 Marcos y Normas de Referencia
-
-| Marco o norma | Uso en el estudio |
-|:---|:---|
-| **Métrica v3 (EVS)** | Estructura del estudio de viabilidad |
-| **Val IT** | Criterios de valoración de las alternativas: estrategia, arquitectura, valor y entrega |
-| **ISO/IEC 38500** | Principios de gobierno de TI aplicados al proyecto |
-| **ITIL / ISO/IEC 20000** | Operación del sistema como servicio |
-| **ISO/IEC 27001** | Seguridad de la información |
-| **ISO 22301** | Plan de continuidad del negocio de la plataforma |
-| **ISO/IEC 19770** | Inventario de licencias y activos de software |
-| **RGPD (Reglamento UE 2016/679)** | Base jurídica, minimización y evaluación de impacto (EIPD) |
-| **Matriz RACI** | Asignación de responsabilidades del proyecto |
+- **No incluye cifras económicas, retorno ni indicadores.** La rentabilidad queda pendiente del caso de negocio con horizonte de tres años, como pide el enunciado.
+- **Las puntuaciones son ordinales y por juicio experto.** La matriz ponderada no es una medida económica: su fin es hacer explícito y reproducible el criterio.
+- **No se seleccionan productos ni proveedores.** El documento solo fija los criterios para elegirlos.
+- **El tratamiento de datos personales es una propuesta.** Debe validarlo el Delegado de Protección de Datos antes de la puerta G0.
 
 ---
 
