@@ -10,7 +10,7 @@
 [![Institución](https://img.shields.io/badge/Instituci%C3%B3n-UNIR-004488.svg)]()
 [![Actividad](https://img.shields.io/badge/Actividad-No.%201%20%C2%B7%20Estudio%20de%20viabilidad-E36209.svg)]()
 [![Enfoque](https://img.shields.io/badge/Enfoque-Cualitativo%20%C2%B7%20sin%20cifras%20econ%C3%B3micas-150458.svg)]()
-[![Documento](https://img.shields.io/badge/Documento-15%20p%C3%A1ginas%20%C2%B7%2014%20tablas%20%C2%B7%204%20figuras-2496ED.svg)]()
+[![Documento](https://img.shields.io/badge/Documento-15%20p%C3%A1ginas%20%C2%B7%2012%20tablas%20numeradas%20%C2%B7%204%20figuras-2496ED.svg)]()
 [![Recomendación](https://img.shields.io/badge/Recomendaci%C3%B3n-A3%20%C2%B7%20Big%20Data%20por%20fases-3776AB.svg)]()
 [![Status](https://img.shields.io/badge/Status-Completo-success.svg)]()
 
@@ -60,8 +60,8 @@ CTI opera con **1.200 camiones, 350 autobuses y 2.800 empleados** (2.200 conduct
 
 - 📊 **Análisis de impacto** en procesos de negocio, personas y tecnología, con las acciones para mitigarlo (Tabla 1).
 - ⚖️ **Evaluación cualitativa** de beneficios frente a factores en contra y una recomendación final razonada (Tabla 2).
-- 📏 **Datos objetivos del caso** que respaldan cada juicio y verificación de las **tres condiciones de inversión** (Tablas 5 y 6).
-- 🔀 **Matriz ponderada** de siete criterios para comparar las cuatro alternativas de forma explícita y reproducible (Tabla 8).
+- 📏 **Datos objetivos del caso** que respaldan cada juicio y verificación de las **tres condiciones de inversión** (Tablas 3 y 4).
+- 🔀 **Matriz ponderada** de siete criterios para comparar las cuatro alternativas de forma explícita y reproducible (Tabla 6).
 - 🏗️ **Arquitectura de referencia por capas** que respeta los sistemas actuales en lugar de sustituirlos.
 - 🗺️ **Hoja de ruta con puertas de decisión** y un análisis de sensibilidad que indica cuándo cambiaría la recomendación.
 
@@ -72,12 +72,12 @@ CTI opera con **1.200 camiones, 350 autobuses y 2.800 empleados** (2.200 conduct
 <table align="center">
   <tr><th>Elemento</th><th>Descripción</th></tr>
   <tr><td colspan="2"><b>📂 raíz</b></td></tr>
-  <tr><td><code>Desarrollo_Actividad_1_Alejandro_De_Mendoza_Final.pdf</code></td><td>📄 <b>Documento final</b> del estudio de viabilidad: <b>15 páginas</b>, 9 secciones, 14 tablas y 4 figuras</td></tr>
+  <tr><td><code>Desarrollo_Actividad_1_Alejandro_De_Mendoza_Final.pdf</code></td><td>📄 <b>Documento final</b> del estudio de viabilidad: <b>15 páginas</b>, 9 secciones, 12 tablas numeradas (más 2 sin número en la sección 2) y 4 figuras</td></tr>
   <tr><td><code>README.md</code></td><td>📘 Este documento</td></tr>
   <tr><td><code>.gitignore</code></td><td>🚫 Lista blanca: solo se publican el PDF, el README y el propio <code>.gitignore</code>. Los archivos editables (Word) y el material de la actividad se conservan en local</td></tr>
   <tr><td colspan="2"><b>📑 Secciones del PDF</b></td></tr>
   <tr><td><b>1</b> Introducción</td><td>🧭 Propósito con <b>resumen ejecutivo</b>, alcance, definiciones, referencias y visión general</td></tr>
-  <tr><td><b>2</b> Memoria explicativa</td><td>🧠 Enfoque metodológico (Tabla 3), alternativas (Tabla 4), criterios, supuestos y límites</td></tr>
+  <tr><td><b>2</b> Memoria explicativa</td><td>🧠 Enfoque metodológico y alternativas (dos tablas sin número), criterios, supuestos y límites</td></tr>
   <tr><td><b>3</b> Situación actual</td><td>🔎 Diagnóstico de CTI (EVS 2) y requisitos de alto nivel R1–R6 (EVS 3)</td></tr>
   <tr><td><b>4</b> Análisis de impacto</td><td>📊 <b>Tabla 1</b>: procesos de negocio, personas y tecnología</td></tr>
   <tr><td><b>5</b> Evaluación cualitativa</td><td>⚖️ <b>Tabla 2</b> y recomendación final; <b>5.1</b> datos objetivos y <b>5.2</b> tres condiciones de inversión</td></tr>
@@ -217,7 +217,7 @@ Cada fase termina con una **decisión del Director General** basada en condicion
 | **A2.** Big Data integral en un solo despliegue | Máximo potencial teórico, pero la infraestructura no lo soporta y el riesgo organizativo y legal es muy alto | 2,60 | ❌ Descartada |
 | **A3.** Big Data por fases | Equilibra beneficio y riesgo, aprende con un piloto y encaja con la estrategia y el gobierno de TI | **4,00** | ✅ **Seleccionada** |
 
-El total ponderado sale de la matriz de la sección 6.3 (Tabla 8): siete criterios puntuados de 1 a 5, con más peso en la puntualidad just-in-time y la utilización de la flota. A1 queda cerca de A3, lo que es coherente con la recomendación: la Fase 0 coincide en parte con A1 y A3 solo se activa al superar la puerta G0.
+El total ponderado sale de la matriz de la sección 6.3 (Tabla 6): siete criterios puntuados de 1 a 5, con más peso en la puntualidad just-in-time y la utilización de la flota. A1 queda cerca de A3, lo que es coherente con la recomendación: la Fase 0 coincide en parte con A1 y A3 solo se activa al superar la puerta G0.
 
 ---
 
@@ -245,7 +245,7 @@ El total ponderado sale de la matriz de la sección 6.3 (Tabla 8): siete criteri
 |:---|:---|
 | ⏱️ La recomendación en dos minutos | Resumen ejecutivo (sección 1.1) |
 | 📊 Las dos tablas que pide la actividad | Tablas 1 y 2 (secciones 4 y 5) |
-| 🔀 La comparación de alternativas | Tabla 4 (sección 2.2) y Tabla 8 (sección 6.3) |
+| 🔀 La comparación de alternativas | Tabla de alternativas (sección 2.2) y Tabla 6 (sección 6.3) |
 | 🗺️ Cómo se ejecutaría el proyecto | Hoja de ruta y puertas de decisión (sección 6.7) |
 
 ---
@@ -256,18 +256,18 @@ El total ponderado sale de la matriz de la sección 6.3 (Tabla 8): siete criteri
 |:---:|:---|:---:|
 | `1` | Análisis de impacto del proyecto en procesos de negocio, personas y tecnología | 4 |
 | `2` | Evaluación cualitativa y recomendación final | 5 |
-| `3` | Actividades del EVS y dónde se recogen en el documento | 2.1 |
-| `4` | Alternativas de solución y resultado de su valoración cualitativa | 2.2 |
-| `5` | Datos objetivos del caso y juicios que respaldan | 5.1 |
-| `6` | Verificación de las tres condiciones de inversión | 5.2 |
-| `7` | Casos de uso priorizados, datos necesarios y decisión de fase | 6.2 |
-| `8` | Matriz ponderada de las alternativas | 6.3 |
-| `9` | Registro de riesgos con respuesta y responsable | 6.4 |
-| `10` | Tratamiento previsto por categoría de dato (RGPD) | 6.5 |
-| `11` | Estado de gobierno del proyecto (ISO/IEC 38500 y Val IT) | 6.6 |
-| `12` | Matriz RACI del proyecto | 6.6 |
-| `13` | Puertas de decisión y condiciones de avance | 6.7 |
-| `14` | Escenarios que ajustarían la recomendación | 6.8 |
+| `3` | Datos objetivos del caso y juicios que respaldan | 5.1 |
+| `4` | Verificación de las tres condiciones de inversión | 5.2 |
+| `5` | Casos de uso priorizados, datos necesarios y decisión de fase | 6.2 |
+| `6` | Matriz ponderada de las alternativas | 6.3 |
+| `7` | Registro de riesgos con respuesta y responsable | 6.4 |
+| `8` | Tratamiento previsto por categoría de dato (RGPD) | 6.5 |
+| `9` | Estado de gobierno del proyecto (ISO/IEC 38500 y Val IT) | 6.6 |
+| `10` | Matriz RACI del proyecto | 6.6 |
+| `11` | Puertas de decisión y condiciones de avance | 6.7 |
+| `12` | Escenarios que ajustarían la recomendación | 6.8 |
+| — | Actividades del EVS y dónde se recogen en el documento (sin número) | 2.1 |
+| — | Alternativas de solución y resultado de su valoración cualitativa (sin número) | 2.2 |
 
 | Figura | Contenido | Sección |
 |:---:|:---|:---:|
@@ -281,7 +281,7 @@ El total ponderado sale de la matriz de la sección 6.3 (Tabla 8): siete criteri
 ## 🧪 Cómo se Respaldan las Valoraciones
 
 ```text
-Datos del caso (Tabla 5)  →  Juicios de las Tablas 1 y 2  →  Matriz ponderada (Tabla 8)  →  Condiciones de inversión (Tabla 6)
+Datos del caso (Tabla 3)  →  Juicios de las Tablas 1 y 2  →  Matriz ponderada (Tabla 6)  →  Condiciones de inversión (Tabla 4)
 ```
 
 Cada juicio cualitativo se apoya en **datos verificables del enunciado del caso** (sección 5.1), y la matriz ponderada hace **explícito y reproducible** el criterio de comparación. La sección 5.2 comprueba las tres condiciones que justifican una inversión de TI:
@@ -311,7 +311,7 @@ Cada juicio cualitativo se apoya en **datos verificables del enunciado del caso*
 <details>
 <summary><b>⚠️ Ver riesgos principales</b></summary>
 
-El documento registra **10 riesgos** valorados por probabilidad e impacto (Figura 3 y Tabla 9). Los de mayor exposición:
+El documento registra **10 riesgos** valorados por probabilidad e impacto (Figura 3 y Tabla 7). Los de mayor exposición:
 
 | ID | Riesgo | P | I | Respuesta |
 |:---:|:---|:---:|:---:|:---|
@@ -332,16 +332,16 @@ El documento registra **10 riesgos** valorados por probabilidad e impacto (Figur
 
 | Práctica | Dónde se aplica |
 |:---|:---|
-| 🔐 **Privacidad por diseño**: datos mínimos, pseudonimización y EIPD previa | Sección 6.5, Tabla 10 |
-| 🪜 **Implantación por fases** con puertas de decisión verificables | Sección 6.7, Tabla 13 |
+| 🔐 **Privacidad por diseño**: datos mínimos, pseudonimización y EIPD previa | Sección 6.5, Tabla 8 |
+| 🪜 **Implantación por fases** con puertas de decisión verificables | Sección 6.7, Tabla 11 |
 | 🔌 **Desacoplar**: capturar cambios sin modificar los sistemas actuales | Sección 6.1 |
 | 🗄️ **Dato único** en un repositorio común con acceso por perfiles | Sección 6.1 |
 | 🇪🇺 **Datos en la UE** y formatos abiertos para evitar dependencia de un proveedor | Sección 6.1 |
-| 🏛️ **Gobierno frente a gestión** (ISO/IEC 38500): evaluar, dirigir y monitorizar | Sección 6.6, Tabla 11 |
-| 👥 **Responsabilidades explícitas** con una matriz RACI | Sección 6.6, Tabla 12 |
-| 📏 **Valoración reproducible** con una matriz ponderada | Sección 6.3, Tabla 8 |
-| 📌 **Juicios respaldados** con datos objetivos del caso | Sección 5.1, Tabla 5 |
-| 🔄 **Análisis de sensibilidad** de la recomendación | Sección 6.8, Tabla 14 |
+| 🏛️ **Gobierno frente a gestión** (ISO/IEC 38500): evaluar, dirigir y monitorizar | Sección 6.6, Tabla 9 |
+| 👥 **Responsabilidades explícitas** con una matriz RACI | Sección 6.6, Tabla 10 |
+| 📏 **Valoración reproducible** con una matriz ponderada | Sección 6.3, Tabla 6 |
+| 📌 **Juicios respaldados** con datos objetivos del caso | Sección 5.1, Tabla 3 |
+| 🔄 **Análisis de sensibilidad** de la recomendación | Sección 6.8, Tabla 12 |
 | 🧯 **Continuidad del negocio** (ISO 22301) e **inventario de activos** (ISO/IEC 19770) | Sección 6.1 |
 | 🤝 **Criterios para elegir proveedor**: referencias, niveles de servicio, datos en la UE y presupuesto por fases | Sección 6.1 |
 | 🧭 **Marcos adaptados al caso**: pocas buenas prácticas bien aplicadas | Sección 2.3 |
