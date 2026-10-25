@@ -10,7 +10,7 @@
 [![Institución](https://img.shields.io/badge/Instituci%C3%B3n-UNIR-004488.svg)]()
 [![Actividad](https://img.shields.io/badge/Actividad-No.%201%20%C2%B7%20Estudio%20de%20viabilidad-E36209.svg)]()
 [![Enfoque](https://img.shields.io/badge/Enfoque-Cualitativo%20%C2%B7%20sin%20cifras%20econ%C3%B3micas-150458.svg)]()
-[![Documento](https://img.shields.io/badge/Documento-14%20p%C3%A1ginas%20%C2%B7%2012%20tablas%20%C2%B7%204%20figuras-2496ED.svg)]()
+[![Documento](https://img.shields.io/badge/Documento-15%20p%C3%A1ginas%20%C2%B7%2014%20tablas%20%C2%B7%204%20figuras-2496ED.svg)]()
 [![Recomendación](https://img.shields.io/badge/Recomendaci%C3%B3n-A3%20%C2%B7%20Big%20Data%20por%20fases-success.svg)]()
 
 **[Contexto](#-contexto-y-alcance) • [Contenido](#-contenido-del-repositorio) • [Metodología](#-metodología) • [Arquitectura](#️-arquitectura-de-referencia) • [Hoja de ruta](#️-hoja-de-ruta-y-puertas-de-decisión) • [Lectura](#-lectura-del-documento) • [Autor](#-autor)**
@@ -55,9 +55,10 @@ CTI opera con **1.200 camiones, 350 autobuses y 2.800 empleados** (2.200 conduct
 
 ### 🌟 ¿Qué aporta este estudio?
 
-- 📊 **Análisis de impacto** del proyecto en procesos de negocio, personas y tecnología, con las acciones para mitigarlo (Tabla 3).
-- ⚖️ **Evaluación cualitativa** de beneficios frente a factores en contra y una recomendación final razonada (Tabla 4).
-- 🔀 **Cuatro alternativas** comparadas con criterios de Val IT, de no actuar a un Big Data integral.
+- 📊 **Análisis de impacto** del proyecto en procesos de negocio, personas y tecnología, con las acciones para mitigarlo (Tabla 1).
+- ⚖️ **Evaluación cualitativa** de beneficios frente a factores en contra y una recomendación final razonada (Tabla 2).
+- 🔀 **Cuatro alternativas** comparadas con criterios de Val IT y una **matriz ponderada** de siete criterios, de no actuar a un Big Data integral.
+- 📏 **Datos objetivos del caso** que respaldan cada valoración y verificación de las **tres condiciones de inversión**.
 - 🏗️ **Arquitectura de referencia por capas** que respeta los sistemas actuales en lugar de sustituirlos.
 - 🔐 **Privacidad por diseño**: tratamiento por categoría de dato, base jurídica RGPD y evaluación de impacto (EIPD).
 - 🗺️ **Hoja de ruta con puertas de decisión** y un análisis de sensibilidad que indica cuándo cambiaría la recomendación.
@@ -69,7 +70,7 @@ CTI opera con **1.200 camiones, 350 autobuses y 2.800 empleados** (2.200 conduct
 <table align="center">
   <tr><th>Elemento</th><th>Descripción</th></tr>
   <tr><td colspan="2"><b>📂 raíz</b></td></tr>
-  <tr><td><code>Desarrollo_Actividad_1_Alejandro_De_Mendoza_Final.pdf</code></td><td>📄 <b>Documento final</b> del estudio de viabilidad: 14 páginas, 9 secciones, 12 tablas y 4 figuras</td></tr>
+  <tr><td><code>Desarrollo_Actividad_1_Alejandro_De_Mendoza_Final.pdf</code></td><td>📄 <b>Documento final</b> del estudio de viabilidad: 15 páginas, 9 secciones, 14 tablas y 4 figuras</td></tr>
   <tr><td><code>README.md</code></td><td>📘 Este documento</td></tr>
   <tr><td><code>.gitignore</code></td><td>🚫 Lista blanca: solo se publican el PDF, el README y el propio <code>.gitignore</code>. Los archivos editables (Word) y el material de la actividad se conservan en local</td></tr>
 </table>
@@ -79,11 +80,11 @@ CTI opera con **1.200 camiones, 350 autobuses y 2.800 empleados** (2.200 conduct
 | Sección | Contenido |
 |:---:|:---|
 | **1** | Introducción: propósito con **resumen ejecutivo**, alcance, definiciones, referencias y visión general |
-| **2** | Memoria explicativa: enfoque metodológico (Tabla 1), alternativas (Tabla 2), criterios, supuestos y límites |
+| **2** | Memoria explicativa: enfoque metodológico (Tabla 3), alternativas (Tabla 4), criterios, supuestos y límites |
 | **3** | Situación actual de CTI (EVS 2) y requisitos de alto nivel R1–R6 (EVS 3) |
-| **4** | **Análisis de impacto** en procesos de negocio, personas y tecnología (Tabla 3) |
-| **5** | **Evaluación cualitativa y recomendación final** (Tabla 4) |
-| **6** | Desarrollo adicional: arquitectura, casos de uso, valoración multicriterio, riesgos, RGPD, gobierno, RACI, hoja de ruta y sensibilidad (Tablas 5–12, Figuras 1–4) |
+| **4** | **Análisis de impacto** en procesos de negocio, personas y tecnología (Tabla 1) |
+| **5** | **Evaluación cualitativa y recomendación final** (Tabla 2); datos objetivos del caso (5.1, Tabla 5) y tres condiciones de inversión (5.2, Tabla 6) |
+| **6** | Desarrollo adicional: arquitectura, casos de uso, matriz ponderada, riesgos, RGPD, gobierno, RACI, hoja de ruta y sensibilidad (Tablas 7–14, Figuras 1–4) |
 | **7–9** | Conclusiones, bibliografía y agradecimiento |
 
 ---
@@ -117,12 +118,14 @@ Las alternativas se valoran con los cuatro ejes de **Val IT** (estrategia, arqui
 
 ## ⚖️ Alternativas Evaluadas
 
-| Alternativa | Valoración cualitativa | Resultado |
-|:---|:---|:---:|
-| **A0.** No actuar | Riesgo bajo, pero no resuelve la falta de puntualidad just-in-time ni la baja utilización de la flota | ❌ Descartada |
-| **A1.** BI incremental sobre los sistemas actuales | Fácil de ejecutar, pero mantiene los datos en silos y no gestiona volumen, velocidad ni variedad | 🟡 Insuficiente como solución final |
-| **A2.** Big Data integral en un solo despliegue | Máximo potencial teórico, pero la infraestructura no lo soporta y el riesgo organizativo y legal es muy alto | ❌ Descartada |
-| **A3.** Big Data por fases | Equilibra beneficio y riesgo, aprende con un piloto y encaja con la estrategia y el gobierno de TI | ✅ **Seleccionada** |
+| Alternativa | Valoración cualitativa | Total ponderado | Resultado |
+|:---|:---|:---:|:---:|
+| **A0.** No actuar | Riesgo bajo, pero no resuelve la falta de puntualidad just-in-time ni la baja utilización de la flota | 3,20 | ❌ Descartada |
+| **A1.** BI incremental sobre los sistemas actuales | Fácil de ejecutar, pero mantiene los datos en silos y no gestiona volumen, velocidad ni variedad | 3,75 | 🟡 Insuficiente como solución final |
+| **A2.** Big Data integral en un solo despliegue | Máximo potencial teórico, pero la infraestructura no lo soporta y el riesgo organizativo y legal es muy alto | 2,60 | ❌ Descartada |
+| **A3.** Big Data por fases | Equilibra beneficio y riesgo, aprende con un piloto y encaja con la estrategia y el gobierno de TI | **4,00** | ✅ **Seleccionada** |
+
+El total ponderado sale de la matriz de la sección 6.3 (Tabla 8): siete criterios puntuados de 1 a 5 por juicio experto, con más peso en la puntualidad just-in-time y la utilización de la flota. A1 queda cerca de A3, lo que es coherente con la recomendación: la Fase 0 coincide en parte con A1 y A3 solo se activa al superar la puerta G0.
 
 ---
 
@@ -208,7 +211,7 @@ Cada fase avanza en cuatro frentes (gobierno y cumplimiento, personas y cambio, 
 
 ## ⚠️ Riesgos Principales
 
-El documento registra **10 riesgos** valorados por probabilidad e impacto (Figura 3 y Tabla 7). Los de mayor exposición:
+El documento registra **10 riesgos** valorados por probabilidad e impacto (Figura 3 y Tabla 9). Los de mayor exposición:
 
 | ID | Riesgo | P | I | Respuesta |
 |:---:|:---|:---:|:---:|:---|
@@ -228,8 +231,8 @@ El documento registra **10 riesgos** valorados por probabilidad e impacto (Figur
 | Requisito de la actividad | Cómo lo resuelve el documento |
 |:---|:---|
 | **Estudio de viabilidad cualitativo** | Sin cifras económicas, caso de negocio ni indicadores (sección 2.3) |
-| **Análisis de impacto** en procesos de negocio, personas y tecnología | Tabla 3, con el impacto y las acciones para mitigarlo (sección 4) |
-| **Evaluación cualitativa** con beneficios, factores en contra y recomendación | Tabla 4, con la recomendación final (sección 5) |
+| **Análisis de impacto** en procesos de negocio, personas y tecnología | Tabla 1, con el impacto y las acciones para mitigarlo (sección 4) |
+| **Evaluación cualitativa** con beneficios, factores en contra y recomendación | Tabla 2, con la recomendación final (sección 5) |
 | **Explicación de cómo se aborda** el problema | Memoria explicativa: metodología EVS, alternativas, criterios y supuestos (sección 2) |
 | **Capacidad de análisis** | Desarrollo adicional: arquitectura, casos de uso, riesgos, RGPD, gobierno y hoja de ruta (sección 6) |
 
@@ -239,7 +242,7 @@ El documento registra **10 riesgos** valorados por probabilidad e impacto (Figur
 
 1. Abrir el archivo `Desarrollo_Actividad_1_Alejandro_De_Mendoza_Final.pdf`.
 2. Consultar el **Resumen ejecutivo** en la sección 1.1.
-3. Revisar la **Tabla 3** (sección 4) y la **Tabla 4** (sección 5).
+3. Revisar la **Tabla 1** (sección 4) y la **Tabla 2** (sección 5).
 4. Profundizar en el **Desarrollo adicional** (sección 6).
 
 ---
@@ -253,6 +256,8 @@ El documento registra **10 riesgos** valorados por probabilidad e impacto (Figur
 | **ISO/IEC 38500** | Principios de gobierno de TI aplicados al proyecto |
 | **ITIL / ISO/IEC 20000** | Operación del sistema como servicio |
 | **ISO/IEC 27001** | Seguridad de la información |
+| **ISO 22301** | Plan de continuidad del negocio de la plataforma |
+| **ISO/IEC 19770** | Inventario de licencias y activos de software |
 | **RGPD (Reglamento UE 2016/679)** | Base jurídica, minimización y evaluación de impacto (EIPD) |
 | **Matriz RACI** | Asignación de responsabilidades del proyecto |
 
