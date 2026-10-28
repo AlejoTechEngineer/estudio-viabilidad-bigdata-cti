@@ -10,7 +10,7 @@
 [![Institución](https://img.shields.io/badge/Instituci%C3%B3n-UNIR-004488.svg)]()
 [![Actividad](https://img.shields.io/badge/Actividad-No.%201%20%C2%B7%20Estudio%20de%20viabilidad-E36209.svg)]()
 [![Enfoque](https://img.shields.io/badge/Enfoque-Cualitativo%20%C2%B7%20sin%20cifras%20econ%C3%B3micas-150458.svg)]()
-[![Documento](https://img.shields.io/badge/Documento-15%20p%C3%A1ginas%20%C2%B7%2012%20tablas%20numeradas%20%C2%B7%204%20figuras-2496ED.svg)]()
+[![Documento](https://img.shields.io/badge/Documento-20%20p%C3%A1ginas%20%C2%B7%2012%20tablas%20numeradas%20%C2%B7%204%20figuras-2496ED.svg)]()
 [![Recomendación](https://img.shields.io/badge/Recomendaci%C3%B3n-A3%20%C2%B7%20Big%20Data%20por%20fases-3776AB.svg)]()
 [![Status](https://img.shields.io/badge/Status-Completo-success.svg)]()
 
@@ -50,7 +50,7 @@
 
 Este repositorio contiene el documento de la **Actividad No. 1: Realización de un estudio de viabilidad** de la asignatura **Servicios de Tecnología de la Información** (UNIR), aplicado al caso de la **Compañía de Transporte Internacional, S.L. (CTI)**. El estudio responde a una pregunta del Director General: **¿conviene implantar un sistema de Big Data?**
 
-CTI opera con **1.200 camiones, 350 autobuses y 2.800 empleados** (2.200 conductores) en tres regiones, con **cinco sistemas que no se comunican entre sí**. Sus clientes exigen entregas **just-in-time** que hoy no puede atender, y la utilización de la flota es baja. El documento sigue el **Estudio de Viabilidad del Sistema (EVS)** de Métrica v3 y valora las alternativas con **Val IT** e **ISO/IEC 38500**.
+CTI opera con **1.200 camiones, 350 autobuses y 2.800 empleados** (2.200 conductores) en tres regiones, con **cinco sistemas con datos dispersos e integración parcial**. Sus clientes exigen entregas **just-in-time** que hoy no puede atender, y la utilización de la flota es baja. El documento sigue el **Estudio de Viabilidad del Sistema (EVS)** de Métrica v3 y valora las alternativas con **Val IT** e **ISO/IEC 38500**.
 
 > **Documento:** estudio de viabilidad cualitativo, sin evaluación económica, caso de negocio ni indicadores.
 > **Enfoque:** análisis de impacto, evaluación cualitativa, matriz ponderada y privacidad por diseño.
@@ -72,7 +72,7 @@ CTI opera con **1.200 camiones, 350 autobuses y 2.800 empleados** (2.200 conduct
 <table align="center">
   <tr><th>Elemento</th><th>Descripción</th></tr>
   <tr><td colspan="2"><b>📂 raíz</b></td></tr>
-  <tr><td><code>Desarrollo_Actividad_1_Alejandro_De_Mendoza_Final.pdf</code></td><td>📄 <b>Documento final</b> del estudio de viabilidad: <b>15 páginas</b>, 9 secciones, 12 tablas numeradas (más 2 sin número en la sección 2) y 4 figuras</td></tr>
+  <tr><td><code>Desarrollo_Actividad_1_Alejandro_De_Mendoza_Final.pdf</code></td><td>📄 <b>Documento final</b> del estudio de viabilidad: <b>20 páginas</b>, 9 secciones, 12 tablas numeradas (más 2 sin número en la sección 2) y 4 figuras</td></tr>
   <tr><td><code>README.md</code></td><td>📘 Este documento</td></tr>
   <tr><td><code>.gitignore</code></td><td>🚫 Lista blanca: solo se publican el PDF, el README y el propio <code>.gitignore</code>. Los archivos editables (Word) y el material de la actividad se conservan en local</td></tr>
   <tr><td colspan="2"><b>📑 Secciones del PDF</b></td></tr>
@@ -150,7 +150,7 @@ La plataforma **no modifica los sistemas actuales**: captura sus cambios, trabaj
 
 ```mermaid
 flowchart TB
-    subgraph CTI["CTI hoy: cinco sistemas aislados"]
+    subgraph CTI["CTI hoy: cinco sistemas con datos dispersos e integración parcial"]
         FL["FLETES<br/>pedidos de mercancías"]
         VI["VIAJES<br/>reservas y billetes"]
         AD["ADMIN<br/>administración"]
@@ -213,7 +213,7 @@ Cada fase termina con una **decisión del Director General** basada en condicion
 | Alternativa | Valoración cualitativa | Total ponderado | Resultado |
 |:---|:---|:---:|:---:|
 | **A0.** No actuar | Riesgo bajo, pero no resuelve la falta de puntualidad just-in-time ni la baja utilización de la flota | 3,20 | ❌ Descartada |
-| **A1.** BI incremental sobre los sistemas actuales | Fácil de ejecutar, pero mantiene los datos en silos y no gestiona volumen, velocidad ni variedad | 3,75 | 🟡 Insuficiente como solución final |
+| **A1.** BI incremental sobre los sistemas actuales | Fácil de ejecutar, pero mantiene datos dispersos e integración parcial y no gestiona volumen, velocidad ni variedad | 3,75 | 🟡 Insuficiente como solución final |
 | **A2.** Big Data integral en un solo despliegue | Máximo potencial teórico, pero la infraestructura no lo soporta y el riesgo organizativo y legal es muy alto | 2,60 | ❌ Descartada |
 | **A3.** Big Data por fases | Equilibra beneficio y riesgo, aprende con un piloto y encaja con la estrategia y el gobierno de TI | **4,00** | ✅ **Seleccionada** |
 
@@ -254,17 +254,17 @@ El total ponderado sale de la matriz de la sección 6.3 (Tabla 6): siete criteri
 
 | Tabla | Contenido | Sección |
 |:---:|:---|:---:|
-| `1` | Análisis de impacto del proyecto en procesos de negocio, personas y tecnología | 4 |
+| `1` | Análisis de impacto del proyecto de Big Data en procesos de negocio, personas y tecnología | 4 |
 | `2` | Evaluación cualitativa y recomendación final | 5 |
 | `3` | Datos objetivos del caso y juicios que respaldan | 5.1 |
 | `4` | Verificación de las tres condiciones de inversión | 5.2 |
 | `5` | Casos de uso priorizados, datos necesarios y decisión de fase | 6.2 |
-| `6` | Matriz ponderada de las alternativas | 6.3 |
+| `6` | Valoración multicriterio cualitativa de las alternativas | 6.3 |
 | `7` | Registro de riesgos con respuesta y responsable | 6.4 |
 | `8` | Tratamiento previsto por categoría de dato (RGPD) | 6.5 |
 | `9` | Estado de gobierno del proyecto (ISO/IEC 38500 y Val IT) | 6.6 |
 | `10` | Matriz RACI del proyecto | 6.6 |
-| `11` | Puertas de decisión y condiciones de avance | 6.7 |
+| `11` | Puertas de decisión y condiciones cualitativas de avance | 6.7 |
 | `12` | Escenarios que ajustarían la recomendación | 6.8 |
 | — | Actividades del EVS y dónde se recogen en el documento (sin número) | 2.1 |
 | — | Alternativas de solución y resultado de su valoración cualitativa (sin número) | 2.2 |
