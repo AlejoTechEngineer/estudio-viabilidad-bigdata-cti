@@ -72,7 +72,7 @@ CTI opera con **1.200 camiones, 350 autobuses y 2.800 empleados** (2.200 conduct
 <table align="center">
   <tr><th>Elemento</th><th>Descripción</th></tr>
   <tr><td colspan="2"><b>📂 raíz</b></td></tr>
-  <tr><td><code>Desarrollo_Actividad_1_Alejandro_De_Mendoza_Final.pdf</code></td><td>📄 <b>Documento final</b> del estudio de viabilidad: <b>20 páginas</b>, 9 secciones, 12 tablas numeradas (más 2 sin número en la sección 2) y 4 figuras</td></tr>
+  <tr><td><code>Desarrollo_Actividad_1_Alejandro_De_Mendoza_FIN.pdf</code></td><td>📄 <b>Documento final</b> del estudio de viabilidad: <b>20 páginas</b>, 9 secciones, 12 tablas numeradas (más 2 sin número en la sección 2) y 4 figuras</td></tr>
   <tr><td><code>README.md</code></td><td>📘 Este documento</td></tr>
   <tr><td><code>.gitignore</code></td><td>🚫 Lista blanca: solo se publican el PDF, el README y el propio <code>.gitignore</code>. Los archivos editables (Word) y el material de la actividad se conservan en local</td></tr>
   <tr><td colspan="2"><b>📑 Secciones del PDF</b></td></tr>
@@ -235,7 +235,7 @@ El total ponderado sale de la matriz de la sección 6.3 (Tabla 6): siete criteri
 
 ## 📖 Lectura del Documento
 
-1. Abrir el archivo `Desarrollo_Actividad_1_Alejandro_De_Mendoza_Final.pdf`.
+1. Abrir el archivo `Desarrollo_Actividad_1_Alejandro_De_Mendoza_FIN.pdf`.
 2. Consultar el **Resumen ejecutivo** en la sección 1.1.
 3. Revisar la **Tabla 1** (sección 4) y la **Tabla 2** (sección 5).
 4. Comprobar el respaldo de las valoraciones en las secciones **5.1** y **5.2**.

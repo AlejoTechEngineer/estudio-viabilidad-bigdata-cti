@@ -3,7 +3,7 @@
 # Permitir solo lo que se publica
 !.gitignore
 !README.md
-!Desarrollo_Actividad_1_Alejandro_De_Mendoza_Final.pdf
+!Desarrollo_Actividad_1_Alejandro_De_Mendoza_FIN.pdf
 
 # Documentación explícita de lo que NUNCA debe subirse (editable, solo local)
 *.docx
